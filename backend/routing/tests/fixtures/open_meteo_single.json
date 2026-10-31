@@ -1,0 +1,11 @@
+{
+  "latitude": 32.8, "longitude": -96.8, "generationtime_ms": 0.4, "utc_offset_seconds": 0,
+  "timezone": "GMT", "timezone_abbreviation": "GMT", "elevation": 137.0,
+  "hourly_units": {"time": "unixtime", "wind_speed_10m": "mp/h", "rain": "inch", "snowfall": "inch"},
+  "hourly": {
+    "time": [1793628000, 1793631600],
+    "wind_speed_10m": [5.0, 6.0],
+    "rain": [0.0, 0.3],
+    "snowfall": [0.0, 0.0]
+  }
+}

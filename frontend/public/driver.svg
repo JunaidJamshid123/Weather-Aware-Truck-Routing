@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="14 17 68 68">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9eeee"/>
+      <stop offset="1" stop-color="#8fc6c8"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#008083"/>
+      <stop offset="1" stop-color="#00585a"/>
+    </linearGradient>
+    <clipPath id="c"><circle cx="48" cy="48" r="48"/></clipPath>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="96" height="96" fill="url(#bg)"/>
+    <!-- shoulders and work shirt -->
+    <path d="M10 100c1-20 15-31 38-31s37 11 38 31z" fill="url(#shirt)"/>
+    <path d="M38 69l10 13 10-13" fill="#eef7f7"/>
+    <path d="M44.5 76.5h7l-1.6 20h-3.8z" fill="#f94862"/>
+    <!-- neck -->
+    <path d="M40 56h16v13c0 3-3.6 6-8 6s-8-3-8-6z" fill="#b97d58"/>
+    <!-- ears -->
+    <ellipse cx="32.5" cy="46" rx="3.6" ry="5" fill="#c98b63"/>
+    <ellipse cx="63.5" cy="46" rx="3.6" ry="5" fill="#c98b63"/>
+    <!-- face -->
+    <path d="M33 42c0-11 6.6-17 15-17s15 6 15 17c0 10.5-6.4 20-15 20s-15-9.5-15-20z" fill="#d89a70"/>
+    <!-- short beard -->
+    <path d="M34.2 48c1.3 8.4 6.8 14 13.8 14s12.5-5.6 13.8-14c-1.8 3.4-4 4.6-6.2 4.4-2.4-.2-4.4-1.6-7.6-1.6s-5.2 1.4-7.6 1.6c-2.2.2-4.4-1-6.2-4.4z" fill="#3a2a22"/>
+    <path d="M43.6 54.4c1.4 1.2 2.8 1.7 4.4 1.7s3-.5 4.4-1.7" fill="none" stroke="#f4d2bb" stroke-width="1.6" stroke-linecap="round"/>
+    <!-- eyes and brows -->
+    <circle cx="42" cy="44" r="1.9" fill="#1d1612"/>
+    <circle cx="54" cy="44" r="1.9" fill="#1d1612"/>
+    <path d="M38.6 39.4c1.8-1.2 4.4-1.4 6.2-.6M51.2 38.8c1.8-.8 4.4-.6 6.2.6" fill="none" stroke="#3a2a22" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M48 45.5v4.2" stroke="#b97d58" stroke-width="1.6" stroke-linecap="round"/>
+    <!-- cap -->
+    <path d="M31.4 37.6c0-11.4 7.4-17.6 16.6-17.6s16.6 6.2 16.6 17.6c-5-1.8-10.6-2.6-16.6-2.6s-11.6.8-16.6 2.6z" fill="#0f1e2e"/>
+    <path d="M30.6 37.8c5.4-2.2 11.2-3.2 17.4-3.2s12 1 17.4 3.2c.6.3.6 1.2 0 1.4-5.6 1.8-11.4 2.6-17.4 2.6s-11.8-.8-17.4-2.6c-.6-.2-.6-1.1 0-1.4z" fill="#1d3247"/>
+    <!-- Spotter dots on the cap -->
+    <circle cx="44.6" cy="27.6" r="1.7" fill="#f94862"/>
+    <circle cx="44.6" cy="31.4" r="1.7" fill="#008083"/>
+    <circle cx="48.4" cy="31.4" r="1.7" fill="#bbddde"/>
+    <circle cx="52.2" cy="31.4" r="1.7" fill="#bbddde"/>
+  </g>
+</svg>

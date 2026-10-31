@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "bbox": [-97.0, 32.0, -96.0, 33.0],
+  "features": [
+    {
+      "type": "Feature",
+      "bbox": [-97.0, 32.0, -96.0, 33.0],
+      "properties": {
+        "segments": [
+          {
+            "distance": 98.1,
+            "duration": 5400.0,
+            "steps": [
+              {"distance": 68.9, "duration": 3600.0, "type": 11, "instruction": "Head north on I-35E", "name": "I-35E", "way_points": [0, 2]},
+              {"distance": 29.2, "duration": 1800.0, "type": 1, "instruction": "Turn right onto US-287", "name": "US-287", "way_points": [2, 4]},
+              {"distance": 0.0, "duration": 0.0, "type": 10, "instruction": "Arrive at destination", "name": "-", "way_points": [4, 4]}
+            ]
+          }
+        ],
+        "summary": {"distance": 98.1, "duration": 5400.0},
+        "way_points": [0, 4]
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[-97.0, 32.0], [-97.0, 32.5], [-97.0, 33.0], [-96.5, 33.0], [-96.0, 33.0]]
+      }
+    }
+  ],
+  "metadata": {"service": "routing", "engine": {"version": "9.0.0"}}
+}

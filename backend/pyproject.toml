@@ -1,0 +1,57 @@
+[project]
+name = "spotter-routing-backend"
+version = "1.0.0"
+description = "Weather-aware truck routing API (Django + DRF)"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = [".venv"]
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP", "N", "SIM", "C4", "RET", "PT", "PL", "RUF", "DJ", "ARG"]
+ignore = [
+    "PLR0913",  # Explicit keyword arguments beat bundling into ad-hoc objects.
+    "ARG001",   # Django handler signatures are fixed.
+    "ARG002",   # DRF view method signatures are fixed.
+]
+
+[tool.ruff.lint.per-file-ignores]
+"routing/tests/**" = ["PLR2004"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["routing", "config"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true  # Django and DRF ship without type stubs.
+exclude = ['\.venv/']
+
+[[tool.mypy.overrides]]
+# Adapters that subclass untyped Django/DRF classes.
+module = ["routing.api.*", "routing.apps", "config.*"]
+disallow_subclassing_any = false
+warn_return_any = false
+
+[[tool.mypy.overrides]]
+module = ["routing.tests.*"]
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+disallow_untyped_calls = false
+disable_error_code = ["union-attr", "arg-type", "attr-defined"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.settings.test"
+python_files = ["test_*.py"]
+addopts = "-q"
+filterwarnings = ["error::RuntimeWarning"]
+
+[tool.coverage.run]
+source = ["routing"]
+omit = ["routing/tests/*"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true

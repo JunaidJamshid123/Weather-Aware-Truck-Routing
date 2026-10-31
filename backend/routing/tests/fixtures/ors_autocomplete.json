@@ -1,0 +1,10 @@
+{
+  "geocoding": {"version": "0.2"},
+  "type": "FeatureCollection",
+  "features": [
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-96.79698, 32.77666]},
+     "properties": {"label": "Dallas, TX, USA", "layer": "locality", "country_a": "USA"}},
+    {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-96.79, 32.95]},
+     "properties": {"label": "Dallas County, TX, USA", "layer": "county", "country_a": "USA"}}
+  ]
+}

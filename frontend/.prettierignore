@@ -1,0 +1,5 @@
+dist
+coverage
+public/mockServiceWorker.js
+src/mocks/*.json
+package-lock.json
