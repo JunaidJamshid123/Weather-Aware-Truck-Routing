@@ -1,7 +1,12 @@
 /** Business limits mirror the backend's validation. */
 
+const PRODUCTION_API_BASE_URL = 'https://weather-aware-truck-routing-5xyz.onrender.com/api';
+const LOCAL_API_BASE_URL = 'http://localhost:8000/api';
+
+/** VITE_API_BASE_URL wins; otherwise production builds use the hosted API. */
 export const API_BASE_URL: string =
-  import.meta.env.VITE_API_BASE_URL ?? 'http://localhost:8000/api';
+  import.meta.env.VITE_API_BASE_URL ??
+  (import.meta.env.PROD ? PRODUCTION_API_BASE_URL : LOCAL_API_BASE_URL);
 export const MAP_STYLE_URL: string =
   import.meta.env.VITE_MAP_STYLE_URL ?? 'https://tiles.openfreemap.org/styles/positron';
 export const MAP_DARK_STYLE_URL: string =
